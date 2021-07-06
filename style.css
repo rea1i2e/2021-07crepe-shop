@@ -27,6 +27,8 @@ section {
 }
 
 .wrapper {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 0 4%;
   padding-bottom: 50px;
 }
@@ -56,7 +58,6 @@ nav ul {
 
 nav li {
   font-size: .7rem;
-  /* font-weight: bolder; */
 }
 
 #req {
@@ -78,10 +79,16 @@ nav li {
   text-align: left;
 }
 
-#about table tr td {
+#about td {
   text-align: left;
   font-size: .7rem;
 }
+
+#about p {
+  text-align: left;
+}
+
+
 
 #crepes img {
   width:100%;
@@ -102,14 +109,17 @@ nav li {
 
 .news-item {
   border-top: solid 1px #C8C8C8;
+}
+
+.news-wrapper>last-child .news-item {
   border-bottom: solid 1px #C8C8C8;
 }
 
 /* トップへ戻るボタン */
 .back-to-top {
   position:fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   background: rgb(185, 29, 94);
   border-radius: 5px;
   color: white;
@@ -131,4 +141,53 @@ footer {
 footer p {
   margin: 0;
   padding :16px;
+}
+
+/* PC版 */
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  nav li {
+    font-size: 1rem;
+  }
+
+  #about table tr td {
+    font-size: 1rem;
+  }
+
+  #crepes ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #crepes li {
+    width: 30%;
+  }
+
+  .news-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .news-item h3 {
+    font-weight: normal;
+    font-size: 1rem;
+    padding-left: 30px;
+  }
+
+  .news-item p {
+    margin-left: 30px;
+  }
 }
