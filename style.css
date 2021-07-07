@@ -111,7 +111,7 @@ nav li {
   border-top: solid 1px #C8C8C8;
 }
 
-.news-wrapper>last-child .news-item {
+.news-wrapper {
   border-bottom: solid 1px #C8C8C8;
 }
 
